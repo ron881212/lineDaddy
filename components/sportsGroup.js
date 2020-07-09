@@ -11,16 +11,18 @@ import SportsCards from './sportsCards'
 
 function SportsGroup() {
     return (
-        <ScrollView 
-            horizontal='true' 
-            contentContainerStyle={styles.sports}
-        >
-                <SportsCards />
-                <SportsCards />
-                <SportsCards />
-                <SportsCards />
-                <SportsCards />
-        </ScrollView>
+        <View style={{height:110}}>
+            <ScrollView 
+                horizontal='true' 
+                contentContainerStyle={styles.sports}
+            >
+                    <SportsCards />
+                    <SportsCards />
+                    <SportsCards />
+                    <SportsCards />
+                    <SportsCards />
+            </ScrollView>
+        </View>
     );
 }
 

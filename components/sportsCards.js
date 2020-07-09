@@ -10,8 +10,6 @@ import {
 
 function SportsCards() {
     return (
-      <View style={{ flex: 1}}>
-
         <View style={styles.card}>
 
         <Image
@@ -24,8 +22,6 @@ function SportsCards() {
         <Text style={styles.text}>Soccer</Text>
 
         </View>
-
-      </View>
     );
 }
 
@@ -39,7 +35,6 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       borderColor:'lightgray',
       marginLeft:16,
-
     },
     sportImage: {
       width:160,

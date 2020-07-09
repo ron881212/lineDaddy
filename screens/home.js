@@ -26,10 +26,14 @@ function Home() {
           style={styles.logoText}
           source={LineDaddy}
         />
-
+        <View style={{height:135}}>
         <ScrollView 
             horizontal='true' 
-            contentContainerStyle={styles.sports}
+            contentContainerStyle={{
+              flex: 1,
+              justifyContent: 'space-between',
+              flexDirection:'row',
+            }}
         >
                 <SportsCards />
                 <SportsCards />
@@ -37,7 +41,8 @@ function Home() {
                 <SportsCards />
                 <SportsCards />
         </ScrollView>
-        <SportsGroup />
+        </View>
+          {/* <SportsGroup /> */}
             <Search />
 
       </SafeAreaView>
@@ -55,11 +60,7 @@ const styles = StyleSheet.create({
       marginTop:24.5
     },
     sports: {
-        // width:'100%', 
         flexDirection:'row',
-        overflow:'hidden',
-        // flexWrap:'nowrap'
-        // flex:1
     }
 });
 

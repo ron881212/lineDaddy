@@ -24,19 +24,19 @@ function Search() {
 
 const styles = StyleSheet.create({
     bar: {
-        width: 350,
+        width: '90%',
         borderRadius: 50, 
         padding: 0,
         margin:0,
+        marginTop:24
     },
     search: {
         borderRadius: 50, 
         backgroundColor:'white',
-        
-
     },
     text: {
         color: 'black', 
+        // justifyContent:'center'
         // lightTheme: true
     }
 })
