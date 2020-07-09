@@ -8,43 +8,37 @@ import {
   Image,
   TextInput
 } from 'react-native';
+import { SearchBar } from 'react-native-elements';
 
-function SearchBar() {
+function Search() {
     return (
-        <TextInput
-            style={{
-              padding: 16,
-              marginTop: 50
-            }}
-        placeholder="Games, events, or teams"
-        // inputAccessoryViewID={inputAccessoryViewID}
-        // onChangeText={text => setText(text)}
-        // value={text}
-      />
+        <SearchBar
+            placeholder="Games, events, or teams"
+            containerStyle={styles.bar}
+            inputContainerStyle={styles.search}
+            inputStyle={styles.text}
+            lightTheme = {true}
+        />
     );
 }
 
 const styles = StyleSheet.create({
-    card: {
-      marginTop:23.8,
-      height:110,
-      backgroundColor:'white',
-      borderRadius:10,
-      overflow:'hidden',
-      borderWidth: 1,
-      borderColor:'lightgray',
-      marginLeft:16,
-
+    bar: {
+        width: 350,
+        borderRadius: 50, 
+        padding: 0,
+        margin:0,
     },
-    sportImage: {
-      width:160,
-      height:86,
+    search: {
+        borderRadius: 50, 
+        backgroundColor:'white',
+        
+
     },
     text: {
-      fontSize:16,
-      marginLeft:'4%',
-      marginTop:'1%'
+        color: 'black', 
+        // lightTheme: true
     }
-});
+})
 
-export default SearchBar
+export default Search

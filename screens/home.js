@@ -10,7 +10,8 @@ import {
 import LineDaddy from '../logos/LINEDADDY.png'
 import LineDaddyLogo from '../logos/LineDaddyLogo.png'
 import SportsCards from '../components/sportsCards'
-import SearchBar from '../components/searchBar'
+import SportsGroup from '../components/sportsGroup'
+import Search from '../components/searchBar'
 
 function Home() {
     return (
@@ -36,8 +37,8 @@ function Home() {
                 <SportsCards />
                 <SportsCards />
         </ScrollView>
-
-        <SearchBar />
+        <SportsGroup />
+            <Search />
 
       </SafeAreaView>
     );
