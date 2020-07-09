@@ -7,19 +7,20 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import Home from '../screens/home'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { NavigationContainer, StackActions } from '@react-navigation/native'
 
 const Tab = createMaterialBottomTabNavigator();
 
-function Home() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home screen</Text>
-    </View>
-  );
-}
+// function Home() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Home screen</Text>
+//     </View>
+//   );
+// }
 
 function Notifications() {
   return (
