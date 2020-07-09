@@ -9,6 +9,8 @@ import {
 } from 'react-native';
 import LineDaddy from '../logos/LINEDADDY.png'
 import LineDaddyLogo from '../logos/LineDaddyLogo.png'
+import SportsCards from '../components/sportsCards'
+import SearchBar from '../components/searchBar'
 
 function Home() {
     return (
@@ -24,7 +26,19 @@ function Home() {
           source={LineDaddy}
         />
 
-        {/* <Text>Home screen</Text> */}
+        <ScrollView 
+            horizontal='true' 
+            contentContainerStyle={styles.sports}
+        >
+                <SportsCards />
+                <SportsCards />
+                <SportsCards />
+                <SportsCards />
+                <SportsCards />
+        </ScrollView>
+
+        <SearchBar />
+
       </SafeAreaView>
     );
 }
@@ -38,6 +52,13 @@ const styles = StyleSheet.create({
     logoText: {
       width: 153,
       marginTop:24.5
+    },
+    sports: {
+        // width:'100%', 
+        flexDirection:'row',
+        overflow:'hidden',
+        // flexWrap:'nowrap'
+        // flex:1
     }
 });
 
