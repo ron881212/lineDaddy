@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 
-function SportsCards() {
+function SportsCards(props) {
     return (
         <View style={styles.card}>
 
@@ -19,7 +19,7 @@ function SportsCards() {
         }}
         />
 
-        <Text style={styles.text}>Soccer</Text>
+        <Text style={styles.text}>{props.name}</Text>
 
         </View>
     );
@@ -28,22 +28,28 @@ function SportsCards() {
 const styles = StyleSheet.create({
     card: {
       marginTop:23.8,
-      height:110,
-      backgroundColor:'white',
+      height:114,
+      backgroundColor:'#ffffff',
       borderRadius:10,
       overflow:'hidden',
-      borderWidth: 1,
-      borderColor:'lightgray',
+      borderWidth: 0.5,
+      borderColor:'#c6c3c1',
       marginLeft:16,
     },
     sportImage: {
       width:160,
-      height:86,
+      height:84,
+      marginBottom:0
     },
     text: {
-      fontSize:16,
-      marginLeft:'4%',
-      marginTop:'1%'
+  // fontFamily: "SFProDisplay",
+    fontSize: 18,
+    fontWeight: "normal",
+    fontStyle: "normal",
+    letterSpacing: -0.36,
+    color: "#262626",
+    marginTop:4,
+    marginLeft:8 
     }
 });
 

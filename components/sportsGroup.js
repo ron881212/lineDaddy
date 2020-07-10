@@ -11,16 +11,16 @@ import SportsCards from './sportsCards'
 
 function SportsGroup() {
     return (
-        <View style={{height:110}}>
+        <View style={{height:140}}>
             <ScrollView 
                 horizontal='true' 
                 contentContainerStyle={styles.sports}
             >
-                    <SportsCards />
-                    <SportsCards />
-                    <SportsCards />
-                    <SportsCards />
-                    <SportsCards />
+                <SportsCards name='Sports'/>
+                <SportsCards name='Sports'/>
+                <SportsCards name='Sports'/>
+                <SportsCards name='Sports'/>
+                <SportsCards name='Sports'/>
             </ScrollView>
         </View>
     );
@@ -28,11 +28,8 @@ function SportsGroup() {
 
 const styles = StyleSheet.create({
     sports: {
-        // width:'100%', 
         flexDirection:'row',
-        overflow:'hidden',
-        // flexWrap:'nowrap'
-        // flex:1
+        flexGrow:1,
     }
 });
 

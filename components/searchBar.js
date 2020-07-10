@@ -24,13 +24,15 @@ function Search() {
 
 const styles = StyleSheet.create({
     bar: {
-        width: '90%',
+        marginBottom:0,
         borderRadius: 50, 
         padding: 0,
         margin:0,
-        marginTop:24
+        marginTop:24,
     },
     search: {
+      width: 328,
+        height:60,
         borderRadius: 50, 
         backgroundColor:'white',
     },

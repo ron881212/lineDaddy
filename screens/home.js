@@ -11,12 +11,12 @@ import LineDaddy from '../logos/LINEDADDY.png'
 import LineDaddyLogo from '../logos/LineDaddyLogo.png'
 import SportsCards from '../components/sportsCards'
 import SportsGroup from '../components/sportsGroup'
+import SportEvents from '../components/sportEvents'
 import Search from '../components/searchBar'
 
 function Home() {
     return (
       <SafeAreaView style={{ flex: 1, alignItems: 'center' }}>
-
         <Image
           style={styles.logo}
           source={LineDaddyLogo}
@@ -26,24 +26,12 @@ function Home() {
           style={styles.logoText}
           source={LineDaddy}
         />
-        <View style={{height:135}}>
-        <ScrollView 
-            horizontal='true' 
-            contentContainerStyle={{
-              flex: 1,
-              justifyContent: 'space-between',
-              flexDirection:'row',
-            }}
-        >
-                <SportsCards />
-                <SportsCards />
-                <SportsCards />
-                <SportsCards />
-                <SportsCards />
-        </ScrollView>
-        </View>
-          {/* <SportsGroup /> */}
-            <Search />
+
+        <SportsGroup />
+
+        <Search />
+
+          <SportEvents />
 
       </SafeAreaView>
     );
