@@ -5,6 +5,7 @@ import {
   ScrollView,
   View,
   Text,
+  TouchableHighlight,
   Image,
 } from 'react-native';
 import LineDaddy from '../logos/LINEDADDY.png'
@@ -31,7 +32,7 @@ function Home() {
 
         <Search />
 
-          <SportEvents />
+        <SportEvents />
 
       </SafeAreaView>
     );
