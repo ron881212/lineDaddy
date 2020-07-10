@@ -9,6 +9,7 @@ import {
   TextInput
 } from 'react-native';
 import { SearchBar } from 'react-native-elements';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 function Search() {
     return (
@@ -18,6 +19,13 @@ function Search() {
             inputContainerStyle={styles.search}
             inputStyle={styles.text}
             lightTheme = {true}
+            leftIconContainerStyle={{paddingRight:0}}
+            searchIcon={<MaterialCommunityIcons 
+              name="magnify"
+              color='#c6c3c1' 
+              size={26}
+              style={{marginLeft:32}}
+              />}
         />
     );
 }
@@ -29,6 +37,13 @@ const styles = StyleSheet.create({
         padding: 0,
         margin:0,
         marginTop:24,
+
+        marginBottom:8,
+
+        shadowOpacity: 0.3,
+        shadowRadius: 5,
+        shadowColor: '#c6c3c1',
+        shadowOffset: { height: 5, width: 0 }
     },
     search: {
       width: 328,
@@ -38,8 +53,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'black', 
-        // justifyContent:'center'
-        // lightTheme: true
+        // textAlign:'center',
     }
 })
 

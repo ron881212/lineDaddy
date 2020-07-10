@@ -34,12 +34,13 @@ const styles = StyleSheet.create({
       overflow:'hidden',
       borderWidth: 0.5,
       borderColor:'#c6c3c1',
-      marginLeft:16,
+      marginLeft:16,   
     },
     sportImage: {
       width:160,
       height:84,
-      marginBottom:0
+      marginBottom:0,
+      paddingBottom:0
     },
     text: {
   // fontFamily: "SFProDisplay",

@@ -34,6 +34,22 @@ const DATA = [
       id: '58694a0f-3da1-471f-bd96-14557dbe5esf',
       name: 'Events',
     },
+    {
+      id: '58694a0f-3da1-471f-bd96-15557dbe5esf',
+      name: 'Events',
+    },
+    {
+      id: '58694a0f-3da1-471f-bd56-14557dbe5esf',
+      name: 'Events',
+    },
+    {
+      id: '58694a0f-3da1-471f-bd36-14557dbe5esf',
+      name: 'Events',
+    },
+    {
+      id: '58694a0f-3da1-471f-bd56-14557dbe5esf',
+      name: 'Events',
+    },
 ];
 
 function SportEvents() {
@@ -41,15 +57,15 @@ function SportEvents() {
         <SportsCards name={item.name} />
     );
     return (
-        // <View style={{marginTop:8, marginLeft:-16}}>
             <FlatList
                 data={DATA}
                 horizontal={false}
                 numColumns={2}
                 renderItem={renderItem}
                 keyExtractor={item => item.id}
+                columnWrapperStyle={{marginLeft:-16}}
+                contentContainerStyle={{paddingBottom:20}}
             />
-        // </View>
     );
 }
 
@@ -61,7 +77,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignContent:'center',
         marginTop:0,
-        // marginLeft:-16,
+        // marginBottom:15
     }
 });
 

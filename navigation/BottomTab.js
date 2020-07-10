@@ -13,7 +13,7 @@ const Tab = createMaterialBottomTabNavigator();
 function Notifications() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications screen</Text>
+      <Text>Saved screen</Text>
     </View>
   );
 }

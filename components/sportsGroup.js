@@ -45,6 +45,7 @@ function SportsGroup() {
             horizontal={true}
             renderItem={renderItem}
             keyExtractor={item => item.id}
+            contentContainerStyle={{paddingRight:16}}
         />
         </View>
     );
