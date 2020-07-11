@@ -17,7 +17,7 @@ import Search from '../components/searchBar'
 
 function Home() {
     return (
-      <SafeAreaView style={{ flex: 1, alignItems: 'center' }}>
+      <SafeAreaView style={{ flex: 1, alignItems: 'center', backgroundColor:'white' }}>
         <Image
           style={styles.logo}
           source={LineDaddyLogo}

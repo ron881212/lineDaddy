@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
       marginTop:23.8,
       height:114,
       backgroundColor:'#ffffff',
-      borderRadius:10,
+      borderRadius:(0, 0, 10, 10),
       overflow:'hidden',
       borderWidth: 0.5,
       borderColor:'#c6c3c1',
